@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="WalMart Test Suite">
+ 
+  <listeners>
+        <listener class-name="com.wal.util.RetryListener"/>
+        <listener class-name="com.wal.extendreportListener.ExtendReportListner" />
+  </listeners>
+
+  <test verbose="2" name="Walmart test">
+    <classes>
+      <class name="com.wal.testcases.LoginAppTest"/>
+      <class name="com.wal.testcases.HomeMenuTest"/>
+      <class name="com.wal.testcases.PickUpPageAdTest"/>
+    </classes>
+  </test> <!-- Default test -->
+  
+  
+</suite> <!-- Default suite -->
